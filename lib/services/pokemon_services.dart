@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:all_widget/api_routs/api_handler.dart';
 import 'package:all_widget/api_routs/api_routs.dart';
 import 'package:http/http.dart' as http;
 
@@ -16,5 +17,14 @@ class PokemonServices {
       return pokemonModelFromJson(jsonString);
     }
     return null;
+  }
+}
+
+class PokemonService1 {
+  static Future pokemonServices() async {
+    var response = await ApiService()
+        .getResponse(apiType: APIType.aGet, url: ApiRouts.pokemonUrl);
+    PokemonModel pokemonModel = PokemonModel.fromJson(response);
+    return pokemonModel;
   }
 }

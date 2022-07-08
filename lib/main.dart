@@ -2,12 +2,15 @@ import 'package:all_widget/view/authantication/log_in_screen.dart';
 import 'package:all_widget/view/authantication/sign_up_screen.dart';
 import 'package:all_widget/view/mack_up/mack_up_getx_screen.dart';
 import 'package:all_widget/view/mack_up/mack_up_home_screen.dart';
+import 'package:all_widget/view/mvc/pokemon.dart';
 import 'package:all_widget/view/pokemon/pokemo_future_screen.dart';
-import 'package:all_widget/view/register_page.dart';
+import 'package:all_widget/view/mvc/register_page.dart';
 import 'package:all_widget/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+
+import 'model/pokemon_model.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: RegisterScreen(),
+      home: Pokemon1Screen(),
     );
   }
 }

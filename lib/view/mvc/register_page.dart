@@ -7,8 +7,8 @@ import 'package:all_widget/view/authantication/log_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../common/text.dart';
-import '../../controller/password_controller.dart';
+import '../../../common/text.dart';
+import '../../../controller/password_controller.dart';
 
 class RegisterScreen extends StatefulWidget {
   @override
